@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="scores">
+            <p>Computer : 
+                <span id="computer_score">0</span>
+            </p>
+            <p>
+                You :
+                <span id="user_score">0</span>
+            </p>
+        </div>
+        <div class="weapons">
+            <button onclick="checker('rock')">
+                <i class="far fa-hand-rock-o" title=""></i>
+            </button>
+            <button onclick="checker('paper')">
+                <i class="far fa-hand-paper-o" title=""></i>
+            </button>
+            <button onclick="checker('scissor')">
+                <i class="far fa-hand-scissors-o" title=""></i>
+            </button>
+        </div>
+        <div class="details">
+            <p id="user_choice"></p>
+            <p id="comp_choice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="script.js" ></script>
+</body>
+</html>

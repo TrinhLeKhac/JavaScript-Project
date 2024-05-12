@@ -1,0 +1,128 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* Set default font family */
+  }
+  
+  /* Styling for the body */
+  body {
+    background-color: #025bee; /* Set background color */
+  }
+  
+  /* Wrapper styles */
+  .wrapper {
+    background-color: #ffffff; /* Set background color */
+    width: 90%; /* Set width */
+    max-width: 31.25em; /* Set maximum width */
+    position: absolute; /* Positioning */
+    transform: translateX(-50%); /* Center horizontally */
+    left: 50%;
+    top: 0.5em;
+    padding: 1.5em; /* Padding */
+    border-radius: 0.8em; /* Border radius */
+  }
+  
+  /* Image styles */
+  img {
+    display: block; /* Make images block-level */
+    width: 80%; /* Set width */
+    margin: auto; /* Center horizontally */
+  }
+  
+  /* Buttons container styles */
+  .btns-container {
+    display: grid; /* Display as grid */
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 1em; /* Gap between items */
+    margin: 1em 0 1.5em 0; /* Margin */
+  }
+  
+  /* Remove default styling for input, label, and button */
+  input,
+  label,
+  button {
+    border: none;
+    outline: none;
+  }
+  
+  /* Styling for file input */
+  input[type="file"] {
+    display: none; /* Hide file input */
+  }
+  
+  /* Styling for labels and buttons */
+  label,
+  button {
+    display: block; /* Display as block */
+    font-size: 1.1em; /* Font size */
+    background-color: #025bee; /* Background color */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Text alignment */
+    padding: 0.8em 0; /* Padding */
+    border-radius: 0.3em; /* Border radius */
+    cursor: pointer; /* Cursor style */
+  }
+  
+  /* Styling for result section */
+  #result {
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 1em; /* Gap between items */
+  }
+  
+  #result div {
+    position: relative; /* Positioning */
+    display: flex; /* Display as flex */
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Space between items */
+  }
+  
+  /* Styling for input fields */
+  #result input {
+    background-color: transparent; /* Transparent background */
+    font-size: 1em; /* Font size */
+    padding: 0.5em; /* Padding */
+    width: 100%; /* Full width */
+    color: #313b4c; /* Text color */
+    border-bottom: 0.1em solid #021637; /* Bottom border */
+  }
+  
+  /* Styling for buttons inside result section */
+  #result button {
+    position: absolute; /* Positioning */
+    right: 0.6em; /* Right spacing */
+    background-color: transparent; /* Transparent background */
+    color: #7c8696; /* Text color */
+  }
+  
+  /* Styling for picked color reference */
+  #picked-color-ref {
+    grid-column: 2; /* Span across two columns */
+    grid-row: 1 / 3; /* Span across two rows */
+    border: 0.6em solid #d9e8ff; /* Border */
+    border-radius: 0.5em; /* Border radius */
+  }
+  
+  /* Custom alert styling */
+  #custom-alert {
+    transform: scale(0); /* Initially hidden */
+    transition: 0.5s; /* Transition effect */
+    transform-origin: center; /* Transformation origin */
+    background-color: #d9e8ff; /* Background color */
+    color: #025bee; /* Text color */
+    text-align: center; /* Text alignment */
+    padding: 0.5em; /* Padding */
+    margin-top: 1.5em; /* Top margin */
+  }
+  
+  /* Hide class */
+  .hide {
+    display: none; /* Hide element */
+  }
+  
+  /* Error styling */
+  #error {
+    color: #ff725a; /* Text color */
+    text-align: center; /* Text alignment */
+  }

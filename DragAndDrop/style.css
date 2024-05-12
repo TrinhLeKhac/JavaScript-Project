@@ -1,0 +1,49 @@
+/* Apply box-sizing: border-box to all elements for consistent box model */
+* {
+    box-sizing: border-box;
+}
+  
+  /* Reset default margin and padding on the body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b5aaf5; /* Set background color for the entire page */
+}
+  
+  /* Style for a container element */
+.container {
+    font-family: "Poppins", sans-serif; /* Specify the font family */
+    background-color: #ffffff; /* Set background color for the container */
+    padding: 3em 2em; /* Add padding inside the container */
+    width: 90%; /* Set the width of the container to 90% of its parent element */
+    max-width: 37em; /* Set the maximum width of the container */
+    position: absolute; /* Position the container absolutely */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    top: 50%; /* Position the container 50% from the top of its containing element */
+    left: 50%; /* Position the container 50% from the left of its containing element */
+    border-radius: 0.8em; /* Apply border radius to give rounded corners to the container */
+}
+  
+  /* Style for an unordered list element */
+#list {
+    position: relative; /* Position the list relative to its normal position */
+    padding-inline-start: 0; /* Remove default left padding of the list */
+    list-style-type: none; /* Remove default list bullet points */
+}
+  
+  /* Style for list items */
+.list-item {
+    padding: 0.8em 0; /* Add padding to the top and bottom of list items */
+    border-radius: 0.2em; /* Apply border radius to give rounded corners to list items */
+    margin: 1em auto; /* Center list items horizontally with 1em margin on top and bottom */
+    border: 1px solid #000000; /* Add a border around list items */
+    text-align: center; /* Center-align text inside list items */
+}
+  
+  /* Style for list items on hover */
+.list-item:hover {
+    cursor: move; /* Change cursor to indicate draggable */
+    background-color: #d1c9ff; /* Change background color on hover */
+    border-color: #8673f2; /* Change border color on hover */
+    color: #8673f2; /* Change text color on hover */
+}
